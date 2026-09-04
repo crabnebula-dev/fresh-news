@@ -1,0 +1,11 @@
+# Security contact information for fresh-news (RFC 9116)
+# https://github.com/crabnebula-dev/fresh-news
+
+Contact: https://github.com/crabnebula-dev/fresh-news/security/advisories/new
+Contact: mailto:denjell@crabnebula.dev
+Encryption: https://raw.githubusercontent.com/crabnebula-dev/fresh-news/main/.well-known/pgp-key.txt
+Encryption: openpgp4fpr:30B1B32BCBA83B55EEB1465AB16A24AF591B824B
+Policy: https://github.com/crabnebula-dev/fresh-news/blob/main/SECURITY.md
+Canonical: https://raw.githubusercontent.com/crabnebula-dev/fresh-news/main/.well-known/security.txt
+Preferred-Languages: en
+Expires: 2027-09-04T00:00:00.000Z

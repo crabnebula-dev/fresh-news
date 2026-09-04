@@ -10,16 +10,19 @@ export default defineConfig(async () => ({
   //
   // 1. prevent Vite from obscuring rust errors
   clearScreen: false,
-  // 2. tauri expects a fixed port, fail if that port is not available
+  // 2. tauri expects a fixed port, fail if that port is not available.
+  //    1420/1421 are Tauri's defaults; moved off them so this app can run
+  //    alongside another Tauri project. Keep in sync with `devUrl` in
+  //    src-tauri/tauri.conf.json.
   server: {
-    port: 1420,
+    port: 9990,
     strictPort: true,
     host: host || false,
     hmr: host
       ? {
           protocol: "ws",
           host,
-          port: 1421,
+          port: 9990,
         }
       : undefined,
     watch: {

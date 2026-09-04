@@ -1,0 +1,5 @@
+# Pins the toolchain for proto (https://moonrepo.dev/proto).
+# Without an explicit pin, proto's shims fall back to a global pnpm/node and
+# abort with a "recursive execution loop" when Tauri spawns beforeDevCommand.
+node = "24.11.1"
+pnpm = "10.28.0"
