@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/src/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>fresh-news</title>
+    <script type="module" src="/src/main.ts" defer></script>
+  </head>
+
+  <body>
+    <main class="container">
+      <header>
+        <h1>Tauri boilerplate</h1>
+        <p id="app-info" class="subtle">loading…</p>
+      </header>
+
+      <section>
+        <h2>String in, string out</h2>
+        <form class="row" id="greet-form">
+          <input id="greet-input" placeholder="Enter a name…" />
+          <button type="submit">Greet</button>
+        </form>
+        <p id="greet-msg" class="output"></p>
+        <p class="subtle">Submitting an empty name returns a typed Rust error.</p>
+      </section>
+
+      <section>
+        <h2>State owned by Rust</h2>
+        <div class="row">
+          <button id="counter-dec" type="button">−1</button>
+          <button id="counter-inc" type="button">+1</button>
+        </div>
+        <p id="counter-msg" class="output"></p>
+        <p class="subtle">Lives in <code>AppState</code>, so it survives a frontend reload.</p>
+      </section>
+
+      <section>
+        <h2>Async command</h2>
+        <button id="async-run" type="button">Run 1.5s task</button>
+        <p id="async-msg" class="output"></p>
+        <p class="subtle">Runs off the main thread — the window stays responsive.</p>
+      </section>
+    </main>
+  </body>
+</html>
